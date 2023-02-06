@@ -46,7 +46,7 @@ const Stake: NextPage = () => {
     async function loadClaimableRewards() {
       const stakeInfo = await contract?.call(
         "getStakeInfoForToken",
-        0,
+        1,
         address
       );
       setClaimableRewards(stakeInfo[1]);
@@ -103,10 +103,10 @@ const Stake: NextPage = () => {
           </div>
 
           <Web3Button
-            action={(contract) => contract.call("claimRewards", 0)}
+            action={(contract) => contract.call("claimRewards", 1)}
             contractAddress={stakingContractAddress}
           >
-            Claim Rewards
+            Claim GZ1
           </Web3Button>
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
