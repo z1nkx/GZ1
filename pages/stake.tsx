@@ -116,7 +116,7 @@ const Stake: NextPage = () => {
              style={{width: '200px', height: '50px', fontSize: '20px', color: '#000', cursor: 'pointer'}}
              onClick={() => router.push("https://assetdapp.vercel.app/")}
             >
-           Gold Bar NFT
+           Mint Gold Bar 
           </button>
           
           <hr className={`${styles.divider} ${styles.spacerTop}`} />

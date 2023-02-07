@@ -11,6 +11,7 @@ const Home: NextPage = () => {
       {/* Top Section */}
       <h1 className={styles.h1}>Z1NKX</h1>
       <p className={styles.selectBoxDescription}>For 3D Sculpture Collection Owners</p>
+      <p className={styles.selectBoxDescription}>(please note our tokens are utility tokens only)</p>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
@@ -18,7 +19,8 @@ const Home: NextPage = () => {
           onClick={() => router.push("https://assetdapp.vercel.app/")}
         >
           {/* Mint a new NFT */}
-          <h2 className={styles.selectBoxTitle}>Mint</h2>
+          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>MINT</h2>
           <p className={styles.selectBoxDescription}>
             Use your GZ1 to buy a Gold Bar NFT.
           </p>
@@ -30,7 +32,8 @@ const Home: NextPage = () => {
           onClick={() => router.push("/stake")}
         >
           {/* Staking an NFT */}
-          <h2 className={styles.selectBoxTitle}>Stake</h2>
+          <Image src="/icons/token.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>STAKE</h2>
           <p className={styles.selectBoxDescription}>
              Stake your NFTS to earn GZ1 tokens.
           </p>
