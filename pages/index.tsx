@@ -9,6 +9,12 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
+      <div id="header">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      </div>
+
       <h1 className={styles.h1}>Z1NKX DASHBOARD</h1>
       <p className={styles.selectBoxDescription}>For 3D Sculpture Collection Owners</p>
       <p className={styles.selectBoxDescription}>(please note our tokens are utility tokens only)</p>
