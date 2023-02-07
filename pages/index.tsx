@@ -13,20 +13,7 @@ const Home: NextPage = () => {
       <p className={styles.selectBoxDescription}>For 3D Sculpture Collection Owners</p>
       <p className={styles.selectBoxDescription}>(please note our tokens are utility tokens only)</p>
       <div className={styles.nftBoxGrid}>
-        <div
-          className={styles.optionSelectBox}
-          role="button"
-          onClick={() => router.push("https://assetdapp.vercel.app/")}
-        >
-          {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>MINT</h2>
-          <p className={styles.selectBoxDescription}>
-            Use your GZ1 to buy a Gold Bar NFT.
-          </p>
-        </div>
-
-        <div
+      <div
           className={styles.optionSelectBox}
           role="button"
           onClick={() => router.push("/stake")}
@@ -37,6 +24,39 @@ const Home: NextPage = () => {
           <p className={styles.selectBoxDescription}>
              Stake your NFTS to earn GZ1 tokens.
           </p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("https://assetdapp.vercel.app/")}
+        >
+          {/* Mint a new NFT */}
+          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>STORE</h2>
+          <p className={styles.selectBoxDescription}>
+            Mint your GZ1 into a Gold Bar NFT.</p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("")}
+        >
+          {/* Mint a new NFT */}
+          <Image src="/icons/convert.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>CONVERT</h2>
+          <p className={styles.selectBoxDescription}>
+            SOON</p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("")}
+        >
+          {/* Mint a new NFT */}
+          <Image src="/icons/burn.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>BURN</h2>
+          <p className={styles.selectBoxDescription}>
+            SOON</p>
         </div>
       </div>
     </div>

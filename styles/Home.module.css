@@ -1,5 +1,5 @@
 .container {
-  margin-top: 96px;
+  margin-top: 9px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,9 @@
 }
 
 .optionSelectBox {
-  border-radius: 16px;
+  margin: 8px;
+  margin-bottom: 20px;
+  border-radius: 1px;
   border: 1px solid rgb(204, 204, 204);
   width: 48%;
   min-height: 200px;
@@ -181,3 +183,4 @@
   max-height: 300px;
   border-radius: 15px;
 }
+
