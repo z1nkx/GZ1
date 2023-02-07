@@ -9,18 +9,18 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {/* Top Section */}
-      <h1 className={styles.h1}>thirdweb Deploy - Custom Staking Contract</h1>
+      <h1 className={styles.h1}>Z1NKX</h1>
+      <p className={styles.selectBoxDescription}>For 3D Sculpture Collection Owners</p>
       <div className={styles.nftBoxGrid}>
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("/mint")}
+          onClick={() => router.push("https://assetdapp.vercel.app/")}
         >
           {/* Mint a new NFT */}
-          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Mint a new NFT</h2>
+          <h2 className={styles.selectBoxTitle}>Mint</h2>
           <p className={styles.selectBoxDescription}>
-            Use the Edition Drop Contract to claim an NFT from the collection.
+            Use your GZ1 to buy a Gold Bar NFT.
           </p>
         </div>
 
@@ -30,11 +30,9 @@ const Home: NextPage = () => {
           onClick={() => router.push("/stake")}
         >
           {/* Staking an NFT */}
-          <Image src="/icons/token.webp" alt="token" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>Stake Your NFTs</h2>
+          <h2 className={styles.selectBoxTitle}>Stake</h2>
           <p className={styles.selectBoxDescription}>
-            Use the custom staking contract deployed via <b>thirdweb Deploy</b>{" "}
-            to stake your NFTs, and earn tokens from the <b>Token</b> contract.
+             Stake your NFTS to earn GZ1 tokens.
           </p>
         </div>
       </div>

@@ -11,6 +11,7 @@ import {
 } from "@thirdweb-dev/react";
 import { BigNumber, ethers } from "ethers";
 import type { NextPage } from "next";
+import router from "next/router";
 import { useEffect, useState } from "react";
 import NFTCard from "../components/NFTCard";
 import {
@@ -103,11 +104,23 @@ const Stake: NextPage = () => {
           </div>
 
           <Web3Button
-            action={(contract) => contract.call("claimRewards", 1)}
+            action={(contract) => contract.call("claimRewards", )}
             contractAddress={stakingContractAddress}
           >
             Claim GZ1
           </Web3Button>
+
+          <button 
+           className={styles.button} 
+             role="button" 
+             style={{width: '200px', height: '50px', fontSize: '20px', color: '#000', cursor: 'pointer'}}
+             onClick={() => router.push("https://assetdapp.vercel.app/")}
+            >
+           Gold Bar NFT
+          </button>
+          
+
+
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
           <h2>Your Staked NFTs</h2>
