@@ -38,13 +38,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2%;
+  gap: 20px;
   margin-top: 28px;
   flex-wrap: wrap;
 }
 
 .nftBox {
-  border-radius: 16px;
+  border-radius: 1px;
   border: 1px solid rgb(204, 204, 204);
   width: 28%;
   min-height: 200px;
@@ -120,7 +120,7 @@
 .tokenItem {
   width: 35%;
   height: 120px;
-  border-radius: 16px;
+  border-radius: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
