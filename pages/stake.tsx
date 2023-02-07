@@ -104,7 +104,7 @@ const Stake: NextPage = () => {
           </div>
 
           <Web3Button
-            action={(contract) => contract.call("claimRewards", )}
+            action={(contract) => contract.call("claimRewards", 1)}
             contractAddress={stakingContractAddress}
           >
             Claim GZ1
@@ -119,9 +119,6 @@ const Stake: NextPage = () => {
            Gold Bar NFT
           </button>
           
-
-
-
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
           <h2>Your Staked NFTs</h2>
           <div className={styles.nftBoxGrid}>
