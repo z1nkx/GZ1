@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("https://assetdapp.vercel.app/")}
+          onClick={() => router.push("https://z1-gold-bar.vercel.app/")}
         >
           {/* Mint a new NFT */}
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
