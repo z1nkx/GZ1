@@ -31,7 +31,7 @@ select {
 }
 
 body {
-  background-image: url('/icons/shoe44.png');
+  background-image: url('/icons/shoe49.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -47,8 +47,8 @@ h2 {
   font-size: 2rem;
 }
 #header {
-  background-color: rgb(60, 51, 60);
-  color: #fff;
+  background-color: rgb(67, 67, 67);
+  color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   padding: 10px 100%;
