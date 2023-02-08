@@ -47,7 +47,7 @@ const Stake: NextPage = () => {
     async function loadClaimableRewards() {
       const stakeInfo = await contract?.call(
         "getStakeInfoForToken",
-        1,
+        8,
         address
       );
       setClaimableRewards(stakeInfo[1]);
@@ -75,7 +75,7 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>STAKE FOR GZ1</h1>
+      <h1 className={styles.h1}>STAKE TO EARN GZ1</h1>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
       {!address ? (
@@ -102,24 +102,8 @@ const Stake: NextPage = () => {
             </div>
           </div>
 
-          <Web3Button
-            action={(contract) => contract.call("claimRewards", 1)}
-            contractAddress={stakingContractAddress}
-          >
-            Claim GZ1
-          </Web3Button>
-
-          <button 
-           className={styles.button} 
-             role="button" 
-             style={{width: '200px', height: '50px', fontSize: '20px', color: '#000', cursor: 'pointer'}}
-             onClick={() => router.push("https://assetdapp.vercel.app/")}
-            >
-           Mint Gold Bar 
-          </button>
-          
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>Your Staked NFTs</h2>
+          <h2>STAKED</h2>
           <div className={styles.nftBoxGrid}>
             {stakedTokens &&
               stakedTokens[0]?.map((stakedToken: BigNumber) => (
@@ -131,7 +115,7 @@ const Stake: NextPage = () => {
           </div>
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
-          <h2>UNSTAKED NFTS</h2>
+          <h2>UNSTAKED </h2>
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
               <div className={styles.nftBox} key={nft.metadata.id.toString()}>
