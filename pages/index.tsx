@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       {/* Top Section */}
       <div id="header">
-      <a href="#home">Z1NKX</a>
+      <a href="#home"></a>
       </div>
 
       <div className={styles.nftBoxGrid}>

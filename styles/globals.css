@@ -45,21 +45,10 @@ body {
 
 h2 {
   font-size: 2rem;
-}
-#header {
-  background-color: rgb(67, 67, 67);
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  padding: 10px 100%;
-    width: 100%;
+  color: var(--white);
 }
 
-#header a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 0px;
-}
+
 
 
 
