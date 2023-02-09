@@ -78,7 +78,7 @@ const Stake: NextPage = () => {
     <div className={styles.container}>
       <h1 className={styles.h1}>STAKE TO EARN GZ1</h1>
       <p className={styles.selectBoxDescription}>
-            Each NFT earns you 2 GZ1 a day</p>
+            2 GZ1 per 24hrs</p>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
       {!address ? (
