@@ -82,12 +82,18 @@
 }
 
 /* Between 1200 and 800 */
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
-  .nftBox {
-    width: 49%;
-    margin-top: 16px;
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .nftBoxGrid,
+  .tokenGrid {
+    width: 100%;
+    max-width: 100%;
   }
 }
+
 
 /* beneath 800
 */
