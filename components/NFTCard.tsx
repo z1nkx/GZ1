@@ -18,8 +18,8 @@ interface NFTCardProps {
 const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
   const { contract } = useContract(editionDropContractAddress, "edition-drop");
   const { data: nft } = useNFT(contract, tokenId);
-
   
+
     return (
       <>
         {nft && (
@@ -104,7 +104,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
             )}
              {tokenId === 9 && (
               <Web3Button
-                action={(contract) => contract.call("claimRewards", 9)}
+                action={(contract) => contract.call("claimRewards", )}
                 contractAddress={stakingContractAddress}
               >
                 Claim Rewards

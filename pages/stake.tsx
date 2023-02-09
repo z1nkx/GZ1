@@ -55,6 +55,7 @@ const Stake: NextPage = () => {
 
     loadClaimableRewards();
   }, [address, contract]);
+  
 
   async function stakeNft(id: string) {
     if (!address) return;
@@ -76,6 +77,8 @@ const Stake: NextPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.h1}>STAKE TO EARN GZ1</h1>
+      <p className={styles.selectBoxDescription}>
+            Each NFT earns you 2 GZ1 a day</p>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
       {!address ? (
@@ -83,17 +86,7 @@ const Stake: NextPage = () => {
       ) : (
         <>
           <div className={styles.tokenGrid}>
-            <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>Claimable Rewards</h3>
-              <p className={styles.tokenValue}>
-                <b>
-                  {!claimableRewards
-                    ? "No rewards"
-                    : ethers.utils.formatUnits(claimableRewards, 18)}
-                </b>{" "}
-                {tokenBalance?.symbol}
-              </p>
-            </div>
+          
             <div className={styles.tokenItem}>
               <h3 className={styles.tokenLabel}>Current Balance</h3>
               <p className={styles.tokenValue}>

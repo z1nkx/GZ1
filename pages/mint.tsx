@@ -6,31 +6,33 @@ import styles from "../styles/Home.module.css";
 
 const Mint: NextPage = () => {
   const router = useRouter();
+  const newContractAddress = "0x104E5050cC962620b7a19563038472a75084F2F2";
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Gold Bar</h1>
+      <h1 className={styles.h1}>GOLD</h1>
 
       <p className={styles.explain}>
        Mint your GZ1 tokens into a Gold Bar NFT.
        This NFT will be redeemable for GZ1.
       </p>
-      <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
+     
+      <img src="./icons/shoe14.png" style={{ width: "400px", height: "400px" }} />
+
 
       <Web3Button
         colorMode="dark"
         accentColor="#5204BF"
-        contractAddress={editionDropContractAddress}
+        contractAddress={newContractAddress}
         action={(contract) => contract.erc1155.claim(0, 1)}
         onSuccess={() => {
           alert("NFT Claimed!");
-          router.push("/stake");
         }}
         onError={(error) => {
           alert(error);
         }}
       >
-        Mint Gold Bar
+        Mint
       </Web3Button>
     </div>
   );
