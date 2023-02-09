@@ -104,7 +104,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
             )}
              {tokenId === 9 && (
               <Web3Button
-                action={(contract) => contract.call("claimRewards", )}
+                action={(contract) => contract.call("claimRewards", 9)}
                 contractAddress={stakingContractAddress}
               >
                 Claim Rewards
