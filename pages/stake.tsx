@@ -76,7 +76,7 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>STAKE TO EARN GZ1</h1>
+      <h1 className={styles.h1}>EARN GZ1</h1>
       <p className={styles.selectBoxDescription}>
             2 GZ1 per 24hrs</p>
       <hr className={`${styles.divider} ${styles.spacerTop}`} />

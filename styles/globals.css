@@ -20,7 +20,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font: Monoid;
 }
 
 :root {
