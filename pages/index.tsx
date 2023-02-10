@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <p className={styles.selectBoxDescription}>
              Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens. 
              NFTS are transfered to our rewards contract.
-             Claim rewards and unlock whenever you wish to sell. 
+             Claim rewards and unlock whenever you wish to. 
           </p>
         </div>
         <div
