@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <p className={styles.selectBoxDescription}>
              Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens. 
              NFTS are transfered to our rewards contract.
-             Claim rewards and unlock whenever you wish to. 
+             Claim rewards and lock/unlock NFTs here. 
           </p>
         </div>
         <div
@@ -35,9 +35,9 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>STORE</h2>
+          <h2 className={styles.selectBoxTitle}>STORAGE</h2>
           <p className={styles.selectBoxDescription}>
-            SOON</p>
+            MORE INFO SOON</p>
         </div>
         <div
           className={styles.optionSelectBox}
@@ -46,9 +46,9 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/convert.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>CONVERT</h2>
+          <h2 className={styles.selectBoxTitle}>EXCHANGE</h2>
           <p className={styles.selectBoxDescription}>
-            SOON</p>
+            MORE INFO SOON</p>
         </div>
         <div
           className={styles.optionSelectBox}
@@ -57,9 +57,9 @@ const Home: NextPage = () => {
         >
           {/* Mint a new NFT */}
           <Image src="/icons/burn.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>BURN</h2>
+          <h2 className={styles.selectBoxTitle}>BURN/REDEEM</h2>
           <p className={styles.selectBoxDescription}>
-            SOON</p>
+            MORE INFO SOON</p>
         </div>
       </div>
     </div>
