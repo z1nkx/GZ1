@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>STORE</h2>
           <p className={styles.selectBoxDescription}>
-            Mint your GZ1 into a Gold Bar NFT.</p>
+            SOON</p>
         </div>
         <div
           className={styles.optionSelectBox}
