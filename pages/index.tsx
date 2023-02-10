@@ -23,7 +23,9 @@ const Home: NextPage = () => {
           <Image src="/icons/token.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>LOCK</h2>
           <p className={styles.selectBoxDescription}>
-             Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens.
+             Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens. 
+             NFTS are transfered to our rewards contract.
+             Claim rewards and unlock whenever you wish to sell. 
           </p>
         </div>
         <div
