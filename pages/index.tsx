@@ -21,9 +21,9 @@ const Home: NextPage = () => {
         >
           {/* Staking an NFT */}
           <Image src="/icons/token.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>STAKE</h2>
+          <h2 className={styles.selectBoxTitle}>LOCK</h2>
           <p className={styles.selectBoxDescription}>
-             Stake your 3D Sculpture NFTS to earn GZ1 tokens.
+             Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens.
           </p>
         </div>
         <div
