@@ -8,10 +8,7 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      {/* Top Section */}
-      <div id="header">
-      <a href="#home"></a>
-      </div>
+    <h1 className={styles.h1}>STAGE 1</h1>
 
       <div className={styles.nftBoxGrid}>
       <div
@@ -25,7 +22,7 @@ const Home: NextPage = () => {
           <p className={styles.selectBoxDescription}>
              Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens. 
              NFTS are transfered to our rewards contract.
-             Claim rewards and lock/unlock NFTs here. 
+             Claim rewards/lock/unlock NFTs here. 
           </p>
         </div>
         <div
@@ -37,29 +34,27 @@ const Home: NextPage = () => {
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>STORAGE</h2>
           <p className={styles.selectBoxDescription}>
-            MORE INFO SOON</p>
+            UNLOCKED SOON</p>
         </div>
         <div
           className={styles.optionSelectBox}
           role="button"
           onClick={() => router.push("")}
         >
-          {/* Mint a new NFT */}
           <Image src="/icons/convert.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>EXCHANGE</h2>
           <p className={styles.selectBoxDescription}>
-            MORE INFO SOON</p>
+            UNLOCKED SOON</p>
         </div>
         <div
           className={styles.optionSelectBox}
           role="button"
           onClick={() => router.push("")}
         >
-          {/* Mint a new NFT */}
           <Image src="/icons/burn.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>BURN/REDEEM</h2>
           <p className={styles.selectBoxDescription}>
-            MORE INFO SOON</p>
+            UNLOCKED SOON</p>
         </div>
       </div>
     </div>
