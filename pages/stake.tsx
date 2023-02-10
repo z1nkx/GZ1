@@ -88,7 +88,7 @@ const Stake: NextPage = () => {
           <div className={styles.tokenGrid}>
           
             <div className={styles.tokenItem}>
-              <h3 className={styles.tokenLabel}>GZ1 Wallet</h3>
+              <h3 className={styles.tokenLabel}>GZ1 Balance</h3>
               <p className={styles.tokenValue}>
                 <b>{tokenBalance?.displayValue}</b> {tokenBalance?.symbol}
               </p>
