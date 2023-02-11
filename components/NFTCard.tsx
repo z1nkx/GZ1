@@ -116,7 +116,7 @@ const NFTCard: FC<NFTCardProps> = ({ tokenId }) => {
             }
             contractAddress={stakingContractAddress}
           >
-            Withdraw
+            Unlock
           </Web3Button>
           </div>
         )}
