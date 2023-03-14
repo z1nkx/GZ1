@@ -8,10 +8,10 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-    <h1 className={styles.h1}>STAGE 1</h1>
+      <h1 className={styles.h1}>STAGE 1</h1>
 
       <div className={styles.nftBoxGrid}>
-      <div
+        <div
           className={styles.optionSelectBox}
           role="button"
           onClick={() => router.push("/stake")}
@@ -34,27 +34,19 @@ const Home: NextPage = () => {
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>STORAGE</h2>
           <p className={styles.selectBoxDescription}>
-            UNLOCKED SOON</p>
+            Store your GZ1 tokens into a Gold Bar NFT. The cost is 120 GZ1. This NFT can be redeemed for 100 GZ1 tokens below.</p>
         </div>
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("")}
+          onClick={() => router.push("https://z1nkx.netlify.app/")}
         >
-          <Image src="/icons/convert.webp" alt="drop" width={64} height={64} />
-          <h2 className={styles.selectBoxTitle}>EXCHANGE</h2>
-          <p className={styles.selectBoxDescription}>
-            UNLOCKED SOON</p>
-        </div>
-        <div
-          className={styles.optionSelectBox}
-          role="button"
-          onClick={() => router.push("")}
-        >
-          <Image src="/icons/burn.webp" alt="drop" width={64} height={64} />
+          {/* Burn Tokens */}
+          <Image src="/icons/burn.webp" alt="" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>BURN/REDEEM</h2>
           <p className={styles.selectBoxDescription}>
-            UNLOCKED SOON</p>
+            Redeem your Gold Bar NFTs here for 100 GZ1. Burn your 2D colour cards for 10 GZ1.
+          </p>
         </div>
       </div>
     </div>
