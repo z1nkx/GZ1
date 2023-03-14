@@ -1,272 +1,147 @@
-.container {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  padding: 24px 24px;
+import type { NextPage } from "next";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import styles from "../styles/Home.module.css";
 
-}
-
-.h1 {
-  margin-bottom: 0px;
-  background-color: rgb(0, 0, 0);
-  padding: 8px 16px;
-  width: 100%; /* header width should be 100% */
-  text-align: center; /* center header text */
-  box-sizing: border-box; /* include padding and border in header width */
-}
+const Home: NextPage = () => {
+  const router = useRouter();
 
 
-.explain {
-  font-size: 1.125rem;
-  max-width: 1200px;
-  background-color: rgb(81, 16, 147);
-  color: white;
-  padding: 16px;
-}
+  return (
+    
+    <div className={styles.container}> 
+        <ul className={styles.linkList}>
+      
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://2-dcolour.vercel.app/"}>
+        2D Mint
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-3d-sculptures"}>
+        3D Sculptures
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1colorcards"}>
+        2D Colour Cards
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-gold-bar-1"}>
+        Gold Bars
+      </button>
+    </li>
+  </ul>
+      <div className={styles.buttonContainer}>
+</div>
 
-.divider {
-  width: 50%;
-  border-color: rgb(144, 0, 160);
-  opacity: .35;
-}
+      <h1 className={styles.h1}>STAGE 1</h1>
+      
 
-.smallDivider {
-  width: 25%;
-  border-color: grey;
-  margin-top: 64px;
-  opacity: 0.25;
-}
+      <div className={styles.nftBoxGrid}>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("/stake")}
+        >
+          {/* Staking an NFT */}
+          <Image src="/icons/token.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>LOCK</h2>
+          <p className={styles.selectBoxDescription}>
+            LOCK YOUR 3D SCULPTURE NFTS TO BE REWARDED GZ1 TOKENS. NFTS ARE SENT TO OUR REWARDS CONTRACT AND LOCKED. CLAIM REWARDS/LOCK/UNLOCK YOUR NFTS HERE.
+          </p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("/mint")}
+        >
+          {/* Mint a new NFT */}
+          <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>STORAGE</h2>
+          <p className={styles.selectBoxDescription}>
+            STORE YOUR GZ1 TOKENS INTO A GOLD BAR NFT. THE COST IS 120GZ1. THIS NFT CAN BE REDEEMED FOR 100GZ1 TOKENS BELOW.</p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("https://z1nkx.netlify.app/")}
+        >
+          {/* Burn Tokens */}
+          <Image src="/icons/burn.webp" alt="" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>BURN/REDEEM</h2>
+          <p className={styles.selectBoxDescription}>
+            REDEEM YOUR GOLD BAR NFTS HERE FOR 100GZ1. BURN YOUR 2D COLOUR CARDS FOR 10GZ1.
+          </p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("https://bosonprotocol.infura-ipfs.io/ipfs/QmYZrCqjf8GpCMNWvEtEQQFUm8m14ACtnMJsSbfDLN6t1a")}
+        >
+          {/* Burn Tokens */}
+          <Image src="/icons/convert.webp" alt="" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>DECENTRALIZED ECOMMERCE </h2>
+          <p className={styles.selectBoxDescription}>
+            PURCHASE PHYSICAL NFT.
+          </p>
+        </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("")}
+        >
+          {/* Burn Tokens */}
+          <Image src="/icons/convert.webp" alt="" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>MARKETPLACE </h2>
+          <p className={styles.selectBoxDescription}>
+            COMING SOON
+          </p>
+        </div>
+        <div
+  className={styles.optionSelectBox}
+  role="button"
+  onClick={() => router.push("")}
+>
+  {/* Burn Tokens */}
+  <h2 className={styles.selectBoxTitle}>JOURNEY MAP</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PROJECT DAPP</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>FUNCTIONS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PARTNERSHIPS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>TEAM STRUCTURE</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>MARKETPLACE</p>
+  </div>
+  <h2 className={styles.selectBoxTitle}>STAGE 2</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>GZ1 AUCTIONS/PRODUCTS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>ECOSYSTEM</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>METAVERSE</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>GAMIFICATION</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PRINTABLE</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>COLABERATIONS</p>
+  </div>
+  <h2 className={styles.selectBoxTitle}>STAGE 3</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>IP CO-OWNED PRODUCTS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>EDUCATION</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>FINAL PRODUCT GENERATOR</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>NFT WEARBLES</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PRODUCTION</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>DISTRIBUTION</p>
+  </div>
+  <h2 className={styles.selectBoxTitle}>STAGE 4</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>IDENTITY MINT</p>
+  </div>
+</div>
 
-.nftBoxGrid {
-  width: 1200px;
-  max-width: 95vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 28px;
-  flex-wrap: wrap;
-}
+      </div>
+    </div> 
+    
+  );
+};
 
-.nftBox {
-  border-radius: 1px;
-  border: 3px solid rgb(255, 255, 255);
-  width: 28%;
-  min-height: 200px;
-  padding: 16px;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.8; /* set the opacity to 80% */
-}
-
-.optionSelectBox {
-  margin: 8px;
-  margin-bottom: 20px;
-  border-radius: 14px;
-  border: 3px solid rgb(204, 204, 204);
-  width: 60%;
-  min-height: 200px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 12px;
-  padding-right: 12px;
-  cursor: pointer;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.8;
-  transition: background-color 0.3s ease; /* add a transition effect for the background color change */
-}
-
-.optionSelectBox:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* change the background color to a light color when hovering */
-}
-
-
-.selectBoxTitle {
-  font-size: 1.75rem;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.selectBoxDescription {
-  color: rgba(255, 255, 255, 0.9);
-  margin-top: 0px;
-  text-align: center; /* center the text horizontally */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
-
-
-
-/* Between 1200 and 800 */
-@media only screen and (max-width: 800px) {
-  .container {
-    padding: 0 16px;
-  }
-
-  .nftBoxGrid,
-  .tokenGrid {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-
-/* beneath 800
-*/
-@media only screen and (max-width: 800px) {
-  .nftBoxGrid {
-    justify-content: center;
-  }
-  .nftBox {
-    width: 90%;
-    margin-top: 16px;
-  }
-  .optionSelectBox {
-    width: 90%;
-    margin-top: 16px;
-  }
-}
-
-.tokenGrid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1%;
-  width: 1600px;
-  max-width: 95vw;
-  flex-wrap: wrap;
-  margin: 16px 0;
-}
-
-.tokenItem {
-  width: 35%;
-  height: 120px;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid rgba(255, 255, 255, 0.4);
-  gap: 16px;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.8; /* set the opacity to 80% */
-}
-
-.tokenLabel {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* Second tokenLabel item */
-
-.tokenValue {
-  font-size: 1.3rem;
-  margin-top: 8px;
-  margin-bottom: 0px;
-  font-weight: 500;
-}
-
-/* On Mobile, make tokenGrid 100% width */
-@media only screen and (max-width: 850px) {
-  .tokenItem {
-    width: 90%;
-    margin-top: 12px;
-  }
-}
-
-/* Screen less than 630, then hide .center */
-@media only screen and (max-width: 630px) {
-  .center {
-    display: none;
-  }
-}
-
-.spacerTop {
-  margin-top: 16px;
-}
-
-.bigSpacerTop {
-  margin-top: 32px;
-}
-
-.spacerBottom {
-  margin-bottom: 16px;
-}
-
-.detailPageHr {
-  margin-top: 0px;
-  margin-bottom: 32px;
-}
-
-.nftMedia {
-  width: 100%;
-  max-height: 300px;
-  border-radius: 14px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* allow items to wrap to new lines if necessary */
-  max-width: 100%; /* prevent container from exceeding screen width */
-  padding: 20px; /* add some padding to container */
-}
-
-.buttonContainer {
-  display: flex;
-  flex-wrap: wrap; /* allow buttons to wrap to new lines if necessary */
-  justify-content: center;
-}
-
-.linkList {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.linkButton {
-  background-color: rgb(8, 191, 247);
-  color: #080000;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-/* adjust button styles for smaller screens */
-@media only screen and (max-width: 600px) {
-  .buttonContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .linkButton {
-    padding: 8px 16px;
-    margin: 8px;
-    font-size: 14px;
-  }
-}
-
-.colorRed {
-  color: rgb(8, 191, 247);
-}
+export default Home;
 
