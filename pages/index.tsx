@@ -90,6 +90,18 @@ const Home: NextPage = () => {
             REDEEM YOUR GOLD BAR NFTS HERE FOR 100GZ1. BURN YOUR 2D COLOUR CARDS FOR 10GZ1.
           </p>
         </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("https://bosonprotocol.infura-ipfs.io/ipfs/QmYZrCqjf8GpCMNWvEtEQQFUm8m14ACtnMJsSbfDLN6t1a")}
+        >
+          {/* Burn Tokens */}
+          <Image src="/icons/convert.webp" alt="" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>DECENTRALIZED ECOMMERCE </h2>
+          <p className={styles.selectBoxDescription}>
+            PURCHASE PHYSICAL NFT.
+          </p>
+        </div>
       </div>
     </div> 
     
@@ -97,4 +109,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
