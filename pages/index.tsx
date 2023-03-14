@@ -6,9 +6,52 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   const router = useRouter();
 
+
   return (
+    
     <div className={styles.container}>
+      <div className={styles.buttonContainer}>
+  <ul className={styles.linkList}>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://2-dcolour.vercel.app/"}>
+        2D Mint
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://medium.com/@z1nkxmail"}>
+        Medium
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href=""}>
+        Website
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://twitter.com/z1nkx_eth"}>
+        Twitter 
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-3d-sculptures"}>
+        3D Sculptures
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1colorcards"}>
+        2D Colour Cards
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-gold-bar-1"}>
+        Gold Bars
+      </button>
+    </li>
+  </ul>
+</div>
+
       <h1 className={styles.h1}>STAGE 1</h1>
+      
 
       <div className={styles.nftBoxGrid}>
         <div
@@ -54,3 +97,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+
