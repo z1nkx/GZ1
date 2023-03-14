@@ -9,7 +9,45 @@ const Home: NextPage = () => {
 
   return (
     
-    <div className={styles.container}>
+    <div className={styles.container}> 
+        <ul className={styles.linkList}>
+      
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://2-dcolour.vercel.app/"}>
+        2D Mint
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://medium.com/@z1nkxmail"}>
+        Medium
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href=""}>
+        Website
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://twitter.com/z1nkx_eth"}>
+        Twitter 
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-3d-sculptures"}>
+        3D Sculptures
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1colorcards"}>
+        2D Colour Cards
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-gold-bar-1"}>
+        Gold Bars
+      </button>
+    </li>
+  </ul>
       <div className={styles.buttonContainer}>
 </div>
 
@@ -55,49 +93,11 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
-      
-      <ul className={styles.linkList}>
-      <h1 className={styles.h1}>LINKS</h1>
-      
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href="https://2-dcolour.vercel.app/"}>
-        2D Mint
-      </button>
-    </li>
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href="https://medium.com/@z1nkxmail"}>
-        Medium
-      </button>
-    </li>
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href=""}>
-        Website
-      </button>
-    </li>
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href="https://twitter.com/z1nkx_eth"}>
-        Twitter 
-      </button>
-    </li>
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-3d-sculptures"}>
-        3D Sculptures
-      </button>
-    </li>
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1colorcards"}>
-        2D Colour Cards
-      </button>
-    </li>
-    <li>
-      <button className={styles.linkButton} onClick={() => window.location.href="https://opensea.io/collection/z1-gold-bar-1"}>
-        Gold Bars
-      </button>
-    </li>
-  </ul>
-    </div>
+    </div> 
+    
   );
 };
 
 export default Home;
+
 
