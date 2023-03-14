@@ -1,21 +1,27 @@
 .container {
-  margin-top: 9px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   position: absolute;
-  padding: 0 24px;
+  padding: 24px 24px;
+
 }
 
 .h1 {
   margin-bottom: 0px;
+  background-color: rgb(0, 0, 0);
+  padding: 8px 16px;
 }
 
 .explain {
   font-size: 1.125rem;
   max-width: 1200px;
+  background-color: rgb(81, 16, 147);
+  color: white;
+  padding: 16px;
 }
 
 .divider {
@@ -57,7 +63,7 @@
   margin-bottom: 20px;
   border-radius: 1px;
   border: 3px solid rgb(204, 204, 204);
-  width: 48%;
+  width: 60%;
   min-height: 200px;
   height: 100%;
   display: flex;
