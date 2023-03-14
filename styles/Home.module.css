@@ -14,7 +14,11 @@
   margin-bottom: 0px;
   background-color: rgb(0, 0, 0);
   padding: 8px 16px;
+  width: 100%; /* header width should be 100% */
+  text-align: center; /* center header text */
+  box-sizing: border-box; /* include padding and border in header width */
 }
+
 
 .explain {
   font-size: 1.125rem;
@@ -200,27 +204,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; /* allow items to wrap to new lines if necessary */
+  max-width: 100%; /* prevent container from exceeding screen width */
+  padding: 20px; /* add some padding to container */
 }
 
 .buttonContainer {
   display: flex;
+  flex-wrap: wrap; /* allow buttons to wrap to new lines if necessary */
+  justify-content: center;
 }
 
 .linkList {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .linkButton {
   background-color: rgb(248, 248, 248);
   color: #080000;
   border: none;
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
   border-radius: 1px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* adjust button styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .linkButton {
+    padding: 8px 16px;
+    margin: 8px;
+    font-size: 14px;
+  }
 }
