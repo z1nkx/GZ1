@@ -64,9 +64,7 @@ const Home: NextPage = () => {
           <Image src="/icons/token.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>LOCK</h2>
           <p className={styles.selectBoxDescription}>
-             Lock your 3D Sculpture NFTS to be rewarded GZ1 tokens. 
-             NFTS are transfered to our rewards contract.
-             Claim rewards/lock/unlock NFTs here. 
+            LOCK YOUR 3D SCULPTURE NFTS TO BE REWARDED GZ1 TOKENS. NFTS ARE SENT TO OUR REWARDS CONTRACT AND LOCKED. CLAIM REWARDS/LOCK/UNLOCK YOUR NFTS HERE.
           </p>
         </div>
         <div
@@ -78,7 +76,7 @@ const Home: NextPage = () => {
           <Image src="/icons/drop.webp" alt="drop" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>STORAGE</h2>
           <p className={styles.selectBoxDescription}>
-            Store your GZ1 tokens into a Gold Bar NFT. The cost is 120 GZ1. This NFT can be redeemed for 100 GZ1 tokens below.</p>
+            STORE YOUR GZ1 TOKENS INTO A GOLD BAR NFT. THE COST IS 120GZ1. THIS NFT CAN BE REDEEMED FOR 100GZ1 TOKENS BELOW.</p>
         </div>
         <div
           className={styles.optionSelectBox}
@@ -89,7 +87,7 @@ const Home: NextPage = () => {
           <Image src="/icons/burn.webp" alt="" width={64} height={64} />
           <h2 className={styles.selectBoxTitle}>BURN/REDEEM</h2>
           <p className={styles.selectBoxDescription}>
-            Redeem your Gold Bar NFTs here for 100 GZ1. Burn your 2D colour cards for 10 GZ1.
+            REDEEM YOUR GOLD BAR NFTS HERE FOR 100GZ1. BURN YOUR 2D COLOUR CARDS FOR 10GZ1.
           </p>
         </div>
       </div>
@@ -99,5 +97,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
 
