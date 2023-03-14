@@ -88,6 +88,9 @@
   background-color: rgba(255, 255, 255, 0.2); /* change the background color to a light color when hovering */
 }
 
+.optionSelectBox {
+  width: 90%;
+}
 
 .selectBoxTitle {
   font-size: 1.75rem;
