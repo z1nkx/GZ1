@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("https://2-dcolour.vercel.app/")}
+          onClick={() => router.push("https://z12-d.vercel.app/")}
         >
           {/* Burn Tokens */}
           <h2 className={styles.selectBoxTitle}>MINT</h2>
