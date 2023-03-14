@@ -114,6 +114,44 @@ const Home: NextPage = () => {
             COMING SOON
           </p>
         </div>
+        <div
+  className={styles.optionSelectBox}
+  role="button"
+  onClick={() => router.push("")}
+>
+  {/* Burn Tokens */}
+  <h2 className={styles.selectBoxTitle}>JOURNEY MAP</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PROJECT DAPP</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>FUNCTIONS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PARTNERSHIPS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>TEAM STRUCTURE</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>MARKETPLACE</p>
+  </div>
+  <h2 className={styles.selectBoxTitle}>STAGE 2</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>GZ1 AUCTIONS/PRODUCTS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>ECOSYSTEM</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>METAVERSE</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>GAMIFICATION</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PRINTABLE</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>COLABERATIONS</p>
+  </div>
+  <h2 className={styles.selectBoxTitle}>STAGE 3</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>IP CO-OWNED PRODUCTS</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>EDUCATION</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>FINAL PRODUCT GENERATOR</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>NFT WEARBLES</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>PRODUCTION</p>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>DISTRIBUTION</p>
+  </div>
+  <h2 className={styles.selectBoxTitle}>STAGE 4</h2>
+  <div className={styles.selectBoxDescriptionContainer}>
+    <p className={`${styles.selectBoxDescription} ${styles.colorRed}`}>IDENTITY MINT</p>
+  </div>
+</div>
+
       </div>
     </div> 
     
@@ -121,3 +159,4 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
