@@ -13,8 +13,8 @@ const Mint: NextPage = () => {
       <h1 className={styles.h1}>GOLD BAR</h1>
 
       <p className={styles.explain}>
-       Mint your GZ1 tokens into a Gold Bar NFT.
-       This NFT will be redeemable for GZ1.
+      Mint 120 GZ1 tokens into a Gold Bar NFT.
+       This NFT will be redeemable for 100 GZ1.
       </p>
 
       <Web3Button
@@ -31,6 +31,10 @@ const Mint: NextPage = () => {
       >
         Mint
       </Web3Button>
+
+     <img src="/icons/gold.png" alt="My Image" width="300" height="300" style={{ marginTop: "10px", border: "3px solid grey" }} />
+
+
     </div>
   );
 };
