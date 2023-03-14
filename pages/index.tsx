@@ -102,6 +102,18 @@ const Home: NextPage = () => {
             PURCHASE PHYSICAL NFT.
           </p>
         </div>
+        <div
+          className={styles.optionSelectBox}
+          role="button"
+          onClick={() => router.push("")}
+        >
+          {/* Burn Tokens */}
+          <Image src="/icons/convert.webp" alt="" width={64} height={64} />
+          <h2 className={styles.selectBoxTitle}>MARKETPLACE </h2>
+          <p className={styles.selectBoxDescription}>
+            COMING SOON
+          </p>
+        </div>
       </div>
     </div> 
     
