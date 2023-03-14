@@ -68,7 +68,7 @@
   margin-bottom: 20px;
   border-radius: 14px;
   border: 3px solid rgb(204, 204, 204);
-  width: 60%;
+  width: 80%;
   min-height: 200px;
   height: 100%;
   display: flex;
@@ -79,7 +79,12 @@
   padding-right: 12px;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
-  opacity: 0.8; /* set the opacity to 80% */
+  opacity: 0.8;
+  transition: background-color 0.3s ease; /* add a transition effect for the background color change */
+}
+
+.optionSelectBox:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* change the background color to a light color when hovering */
 }
 
 
@@ -245,7 +250,14 @@
   border-radius: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  opacity: 0.8;
+  transition: background-color 0.3s ease; /* add a transition effect for the background color change */
 }
+.linkButton:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* change the background color to a light color when hovering */
+}
+
+
 
 /* adjust button styles for smaller screens */
 @media only screen and (max-width: 600px) {
@@ -264,3 +276,4 @@
 .colorRed {
   color: rgb(8, 191, 247);
 }
+
