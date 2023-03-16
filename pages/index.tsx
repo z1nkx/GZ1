@@ -77,7 +77,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("https://z1nkx.netlify.app/")}
+          onClick={() => router.push("https://z1burn.vercel.app/")}
         >
           {/* Burn Tokens */}
           <Image src="/icons/burn.webp" alt="" width={64} height={64} />
