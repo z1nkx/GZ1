@@ -14,7 +14,12 @@ const Home: NextPage = () => {
       
     <li>
       <button className={styles.linkButton} onClick={() => window.location.href="https://linktr.ee/z1nkx/"}>
-        Links
+        Socials
+      </button>
+    </li>
+    <li>
+      <button className={styles.linkButton} onClick={() => window.location.href="https://linktr.ee/z1nkx/"}>
+        Add Tokens
       </button>
     </li>
     <li>
