@@ -94,7 +94,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("https://bosonprotocol.infura-ipfs.io/ipfs/QmYZrCqjf8GpCMNWvEtEQQFUm8m14ACtnMJsSbfDLN6t1a")}
+          onClick={() => router.push("")}
         >
           {/* Burn Tokens */}
           <h2 className={styles.selectBoxTitle}>DECENTRALIZED ECOMMERCE </h2>
