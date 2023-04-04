@@ -97,9 +97,9 @@ const Home: NextPage = () => {
           onClick={() => router.push("")}
         >
           {/* Burn Tokens */}
-          <h2 className={styles.selectBoxTitle}>DECENTRALIZED ECOMMERCE </h2>
+          <h2 className={styles.selectBoxTitle}>BOSON PROTOCOL</h2>
           <p className={styles.selectBoxDescription}>
-            PURCHASE PHYSICAL NFT.
+            PURCHASE NFTS BACKED BY PHYSICAL PRODUCTS.
           </p>
         </div>
         <div
