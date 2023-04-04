@@ -105,7 +105,7 @@ const Home: NextPage = () => {
         <div
           className={styles.optionSelectBox}
           role="button"
-          onClick={() => router.push("")}
+          onClick={() => router.push("https://z1store.eth.limo/")}
         >
           {/* Burn Tokens */}
           <h2 className={styles.selectBoxTitle}>MARKETPLACE </h2>
