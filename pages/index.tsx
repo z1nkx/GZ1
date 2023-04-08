@@ -110,7 +110,7 @@ const Home: NextPage = () => {
           {/* Burn Tokens */}
           <h2 className={styles.selectBoxTitle}>AUCTION </h2>
           <p className={styles.selectBoxDescription}>
-            COMING SOON
+            GZ1 AUCTION 
           </p>
         </div>
         <div
